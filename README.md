@@ -1,5 +1,5 @@
 # User theme selector
-An easy and efficient way to set an user's preferred theme. Using LocalStorage and preferred color scheme to initialize the theme, and data-theme attributes to change the value of the body.
+An easy and efficient way to set an user's preferred theme within the frontend. Using LocalStorage and prefers color scheme to initialize the theme, and data-theme attributes to change the value of the body.
 
 ## Todo
 
