@@ -17,7 +17,7 @@ const getPreferredTheme = () => prefersDarkMode() ? 'dark' : 'light';
  * Gets the targeted attribute by checking the current attribute and inversing it.
  * @returns String
  */
- const getTargetAttribute = () => bodyElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+const getTargetAttribute = () => bodyElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
 
 // Set the user theme on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
