@@ -6,4 +6,4 @@ An easy and efficient way to set an user's preferred theme within the frontend. 
 - [X] Fix folder structure
 - [ ] Micro-interaction with toggle-switch
 - [ ] React example
-- [ ] Vue example
+- [X] Vue example
