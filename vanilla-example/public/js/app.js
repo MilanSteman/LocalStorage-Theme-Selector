@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('data-theme')) { // Check if data already exists in local storage.
         bodyElement.setAttribute('data-theme', localStorage.getItem('data-theme'));
     } else { // If no data is stored in localstorage, set the data theme to the preferred OS theme.
-        bodyElement.setAttribute('data-theme', getPreferredTheme());
         localStorage.setItem('data-theme', getPreferredTheme());
+        bodyElement.setAttribute('data-theme', getPreferredTheme());
     }
 });
 
