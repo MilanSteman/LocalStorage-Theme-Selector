@@ -25,12 +25,6 @@ export default {
     this.setTheme(initialUserTheme);
   },
 
-  data() {
-    return {
-      dataTheme: "light",
-    };
-  },
-
   methods: {
     setTheme(theme) {
       const icon_light = document.querySelector(".icon-light");
@@ -43,7 +37,7 @@ export default {
         icon_light.classList.add("hidden");
         icon_dark.classList.remove("hidden");
       }
-
+      
       localStorage.setItem("data-theme", theme);
       document.body.setAttribute("data-theme", theme);
     },
@@ -55,7 +49,7 @@ export default {
     },
 
     getMediaPreference() {
-      window.matchMedia("(prefers-color-scheme: dark)").matches
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
         : "light";
     },
